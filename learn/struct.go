@@ -10,7 +10,9 @@ type User struct {
 
 func main() {
 
-	v := User{"abhishek", 22, "sewdefw@edfsgdf.com"}
+
+	v := User{"rohit singh Rawat", 22, "sewdefw@edfsgdf.com"}
+
 
 	fmt.Println(v)
 	fmt.Println(v.age)

@@ -1,29 +1,16 @@
 package main
 
 import (
-	"fmt"
 	"CRUD/routes"
+	"fmt"
+	"log"
+	"net/http"
 )
- 
- type Movie struct {
-	ID string  ` json : "id"`
-	Isbn string `json : "isbn"`
-	Title string `json : "title"`
-	Director *Director  `json : "director" `
 
- }
+func main() {
 
-  type Director struct {
+	fmt.Println("starting server at port 8000 ")
 
-	  Firstname  string  `json : "firstname"`
-	  Lastname  string  `json : "lastname"`
-  }
+	log.Fatal(http.ListenAndServe(":8000", routes.CreateRoutes()))
 
-   var movies []Movie
-
-func main (){
-  
-	
-
-	
 }
